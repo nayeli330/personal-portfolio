@@ -15,142 +15,99 @@
             top: 0;
             z-index: 1000;
         }
+        /* Default styles */
         div.background {
-            background-image: url('./images/background_nayeli.jpg');
+            background-image: url('./images/background_nayeli.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed;
             background-size: cover;
+            width: 100vw;
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 767px) {
+            div.background {
+                background-size: contain; /* Make the background image smaller */
+                background-position: right top; /* Align the background to the right */
+            }
+        }
+
+
+        /* Media query for smaller screens */
+        @media (max-width: 767px) {
+            .h3 {
+                font-size: 18px; /* Smaller font size for mobile */
+            }
+
+            .h4 {
+                font-size: 16px; /* Smaller font size for mobile */
+            }
+        }
+
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a class="navbar-brand" href="#">Nayeli</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <a class="navbar-brand" href="./">Nayeli</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-right" href="./">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-right" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-right" href="./resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-right" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
         </div>
-      </nav>
-      <div class="background">
-        <main>
-            <section id="section1">
-                <h2>Section 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, purus nec feugiat pulvinar, velit justo tempor eros, nec vehicula mauris magna at nisl. Fusce id arcu vel felis ultricies bibendum. Vivamus quis commodo lacus. Nam at nisl ac nunc malesuada interdum.</p>
-            </section>
-            
-            <section id="section2">
-                <h2>Section 2</h2>
-                <p>Donec sollicitudin auctor lectus, eget rhoncus velit suscipit id. Nulla convallis libero sit amet erat feugiat auctor. Vestibulum dignissim ligula quis urna dapibus, id eleifend arcu luctus.</p>
-            </section>
-            
-            <section id="section3">
-                <h2>Section 3</h2>
-                <p>Proin interdum, orci ut luctus malesuada, quam libero tristique eros, ac placerat nisi ligula eget lacus. Integer eu libero justo. Suspendisse potenti. Morbi in pulvinar sapien.</p>
-            </section>
-            
-            <section id="section4">
-                <h2>Section 4</h2>
-                <p>Vivamus fringilla ex a sapien auctor, et venenatis ex mattis. Nulla facilisi. Nam a ex sit amet dolor mollis interdum. Donec pulvinar magna non luctus auctor.</p>
-            </section>
-            
-            <!-- Repeat sections to make the page longer -->
-            <section>
-                <h2>Another Section</h2>
-                <p>This is just filler text to make the page longer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sem vitae elit scelerisque convallis. Proin nec fermentum elit, ut cursus metus. Vestibulum tempus nulla non ipsum ullamcorper, sit amet tempus metus condimentum.</p>
-            </section>
-            
-            <section>
-                <h2>Yet Another Section</h2>
-                <p>More filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo justo id orci feugiat, ut condimentum mauris rhoncus. Nullam venenatis vehicula purus vel condimentum. Donec id odio id metus feugiat gravida. In ut nulla sed nisl facilisis mattis.</p>
-            </section>
-            <main>
-            <section id="section1">
-                <h2>Section 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, purus nec feugiat pulvinar, velit justo tempor eros, nec vehicula mauris magna at nisl. Fusce id arcu vel felis ultricies bibendum. Vivamus quis commodo lacus. Nam at nisl ac nunc malesuada interdum.</p>
-            </section>
-            
-            <section id="section2">
-                <h2>Section 2</h2>
-                <p>Donec sollicitudin auctor lectus, eget rhoncus velit suscipit id. Nulla convallis libero sit amet erat feugiat auctor. Vestibulum dignissim ligula quis urna dapibus, id eleifend arcu luctus.</p>
-            </section>
-            
-            <section id="section3">
-                <h2>Section 3</h2>
-                <p>Proin interdum, orci ut luctus malesuada, quam libero tristique eros, ac placerat nisi ligula eget lacus. Integer eu libero justo. Suspendisse potenti. Morbi in pulvinar sapien.</p>
-            </section>
-            
-            <section id="section4">
-                <h2>Section 4</h2>
-                <p>Vivamus fringilla ex a sapien auctor, et venenatis ex mattis. Nulla facilisi. Nam a ex sit amet dolor mollis interdum. Donec pulvinar magna non luctus auctor.</p>
-            </section>
-            
-            <!-- Repeat sections to make the page longer -->
-            <section>
-                <h2>Another Section</h2>
-                <p>This is just filler text to make the page longer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sem vitae elit scelerisque convallis. Proin nec fermentum elit, ut cursus metus. Vestibulum tempus nulla non ipsum ullamcorper, sit amet tempus metus condimentum.</p>
-            </section>
-            
-            <section>
-                <h2>Yet Another Section</h2>
-                <p>More filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo justo id orci feugiat, ut condimentum mauris rhoncus. Nullam venenatis vehicula purus vel condimentum. Donec id odio id metus feugiat gravida. In ut nulla sed nisl facilisis mattis.</p>
-            </section>
-            
-            <!-- Add more sections as needed -->
-        </main>
-        <main>
-            <section id="section1">
-                <h2>Section 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, purus nec feugiat pulvinar, velit justo tempor eros, nec vehicula mauris magna at nisl. Fusce id arcu vel felis ultricies bibendum. Vivamus quis commodo lacus. Nam at nisl ac nunc malesuada interdum.</p>
-            </section>
-            
-            <section id="section2">
-                <h2>Section 2</h2>
-                <p>Donec sollicitudin auctor lectus, eget rhoncus velit suscipit id. Nulla convallis libero sit amet erat feugiat auctor. Vestibulum dignissim ligula quis urna dapibus, id eleifend arcu luctus.</p>
-            </section>
-            
-            <section id="section3">
-                <h2>Section 3</h2>
-                <p>Proin interdum, orci ut luctus malesuada, quam libero tristique eros, ac placerat nisi ligula eget lacus. Integer eu libero justo. Suspendisse potenti. Morbi in pulvinar sapien.</p>
-            </section>
-            
-            <section id="section4">
-                <h2>Section 4</h2>
-                <p>Vivamus fringilla ex a sapien auctor, et venenatis ex mattis. Nulla facilisi. Nam a ex sit amet dolor mollis interdum. Donec pulvinar magna non luctus auctor.</p>
-            </section>
-            
-            <!-- Repeat sections to make the page longer -->
-            <section>
-                <h2>Another Section</h2>
-                <p>This is just filler text to make the page longer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sem vitae elit scelerisque convallis. Proin nec fermentum elit, ut cursus metus. Vestibulum tempus nulla non ipsum ullamcorper, sit amet tempus metus condimentum.</p>
-            </section>
-            
-            <section>
-                <h2>Yet Another Section</h2>
-                <p>More filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo justo id orci feugiat, ut condimentum mauris rhoncus. Nullam venenatis vehicula purus vel condimentum. Donec id odio id metus feugiat gravida. In ut nulla sed nisl facilisis mattis.</p>
-            </section>
-            
-            <!-- Add more sections as needed -->
-        </main>
-      </div>
-      
-    <!-- You can include scripts at the end of the body for better performance -->
-    <!-- <script src="script.js"></script> -->
+        <div class="col-1"></div>
+    </div>
+
+    <div class="background">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mt-4">
+                            <br>
+                            <p class="h3">
+                                I'm Nayeli
+                            </p>
+                            <p class="h3">
+                                An Aspiring Multi-Lingual Translator
+                            </p>
+                            <p class="small">
+                                Breaking language barriers between English and Spanish. As a recent linguistics graduate, I specialize in precise translations that bridge cultural gaps and enhance communication.
+                            </p>
+                            <button class="btn mb-2 mb-md-0 py-3 px-4 btn-primary">
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 
