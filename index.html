@@ -4,12 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- You can link your CSS files here -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
+    <!-- CSS only -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for sticky header */
+        .navbar.sticky-top {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        div.background {
+            background-image: url('./images/background_nayeli.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <!-- Your content goes here -->
-    
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#">Nayeli</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="background">
+        <main>
+            <section id="section1">
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, purus nec feugiat pulvinar, velit justo tempor eros, nec vehicula mauris magna at nisl. Fusce id arcu vel felis ultricies bibendum. Vivamus quis commodo lacus. Nam at nisl ac nunc malesuada interdum.</p>
+            </section>
+            
+            <section id="section2">
+                <h2>Section 2</h2>
+                <p>Donec sollicitudin auctor lectus, eget rhoncus velit suscipit id. Nulla convallis libero sit amet erat feugiat auctor. Vestibulum dignissim ligula quis urna dapibus, id eleifend arcu luctus.</p>
+            </section>
+            
+            <section id="section3">
+                <h2>Section 3</h2>
+                <p>Proin interdum, orci ut luctus malesuada, quam libero tristique eros, ac placerat nisi ligula eget lacus. Integer eu libero justo. Suspendisse potenti. Morbi in pulvinar sapien.</p>
+            </section>
+            
+            <section id="section4">
+                <h2>Section 4</h2>
+                <p>Vivamus fringilla ex a sapien auctor, et venenatis ex mattis. Nulla facilisi. Nam a ex sit amet dolor mollis interdum. Donec pulvinar magna non luctus auctor.</p>
+            </section>
+            
+            <!-- Repeat sections to make the page longer -->
+            <section>
+                <h2>Another Section</h2>
+                <p>This is just filler text to make the page longer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sem vitae elit scelerisque convallis. Proin nec fermentum elit, ut cursus metus. Vestibulum tempus nulla non ipsum ullamcorper, sit amet tempus metus condimentum.</p>
+            </section>
+            
+            <section>
+                <h2>Yet Another Section</h2>
+                <p>More filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo justo id orci feugiat, ut condimentum mauris rhoncus. Nullam venenatis vehicula purus vel condimentum. Donec id odio id metus feugiat gravida. In ut nulla sed nisl facilisis mattis.</p>
+            </section>
+            <main>
+            <section id="section1">
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, purus nec feugiat pulvinar, velit justo tempor eros, nec vehicula mauris magna at nisl. Fusce id arcu vel felis ultricies bibendum. Vivamus quis commodo lacus. Nam at nisl ac nunc malesuada interdum.</p>
+            </section>
+            
+            <section id="section2">
+                <h2>Section 2</h2>
+                <p>Donec sollicitudin auctor lectus, eget rhoncus velit suscipit id. Nulla convallis libero sit amet erat feugiat auctor. Vestibulum dignissim ligula quis urna dapibus, id eleifend arcu luctus.</p>
+            </section>
+            
+            <section id="section3">
+                <h2>Section 3</h2>
+                <p>Proin interdum, orci ut luctus malesuada, quam libero tristique eros, ac placerat nisi ligula eget lacus. Integer eu libero justo. Suspendisse potenti. Morbi in pulvinar sapien.</p>
+            </section>
+            
+            <section id="section4">
+                <h2>Section 4</h2>
+                <p>Vivamus fringilla ex a sapien auctor, et venenatis ex mattis. Nulla facilisi. Nam a ex sit amet dolor mollis interdum. Donec pulvinar magna non luctus auctor.</p>
+            </section>
+            
+            <!-- Repeat sections to make the page longer -->
+            <section>
+                <h2>Another Section</h2>
+                <p>This is just filler text to make the page longer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sem vitae elit scelerisque convallis. Proin nec fermentum elit, ut cursus metus. Vestibulum tempus nulla non ipsum ullamcorper, sit amet tempus metus condimentum.</p>
+            </section>
+            
+            <section>
+                <h2>Yet Another Section</h2>
+                <p>More filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo justo id orci feugiat, ut condimentum mauris rhoncus. Nullam venenatis vehicula purus vel condimentum. Donec id odio id metus feugiat gravida. In ut nulla sed nisl facilisis mattis.</p>
+            </section>
+            
+            <!-- Add more sections as needed -->
+        </main>
+        <main>
+            <section id="section1">
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, purus nec feugiat pulvinar, velit justo tempor eros, nec vehicula mauris magna at nisl. Fusce id arcu vel felis ultricies bibendum. Vivamus quis commodo lacus. Nam at nisl ac nunc malesuada interdum.</p>
+            </section>
+            
+            <section id="section2">
+                <h2>Section 2</h2>
+                <p>Donec sollicitudin auctor lectus, eget rhoncus velit suscipit id. Nulla convallis libero sit amet erat feugiat auctor. Vestibulum dignissim ligula quis urna dapibus, id eleifend arcu luctus.</p>
+            </section>
+            
+            <section id="section3">
+                <h2>Section 3</h2>
+                <p>Proin interdum, orci ut luctus malesuada, quam libero tristique eros, ac placerat nisi ligula eget lacus. Integer eu libero justo. Suspendisse potenti. Morbi in pulvinar sapien.</p>
+            </section>
+            
+            <section id="section4">
+                <h2>Section 4</h2>
+                <p>Vivamus fringilla ex a sapien auctor, et venenatis ex mattis. Nulla facilisi. Nam a ex sit amet dolor mollis interdum. Donec pulvinar magna non luctus auctor.</p>
+            </section>
+            
+            <!-- Repeat sections to make the page longer -->
+            <section>
+                <h2>Another Section</h2>
+                <p>This is just filler text to make the page longer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sem vitae elit scelerisque convallis. Proin nec fermentum elit, ut cursus metus. Vestibulum tempus nulla non ipsum ullamcorper, sit amet tempus metus condimentum.</p>
+            </section>
+            
+            <section>
+                <h2>Yet Another Section</h2>
+                <p>More filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo justo id orci feugiat, ut condimentum mauris rhoncus. Nullam venenatis vehicula purus vel condimentum. Donec id odio id metus feugiat gravida. In ut nulla sed nisl facilisis mattis.</p>
+            </section>
+            
+            <!-- Add more sections as needed -->
+        </main>
+      </div>
+      
     <!-- You can include scripts at the end of the body for better performance -->
     <!-- <script src="script.js"></script> -->
 </body>
